@@ -1,6 +1,6 @@
-# Automatisez l'installation de votre poste de travail
+# Automatisez l'installation de votre poste de travail - BDX I/O 2023
 
-## [Slides](https://sylvainmetayer.github.io/talk-automatisez-installation-de-votre-pc)
+## [Slides](https://sylvainmetayer.github.io/talk-automatisez-installation-de-votre-pc-bdxio-2023)
 
 Warning ⚠
 
@@ -13,3 +13,7 @@ See [CanIUse](https://caniuse.com/css-has) for details
 ## Présentation
 
 [Voir README](./slides/README.md)
+
+## Vélotypie
+
+`cat mots_cles_vélotypie.md  | sort | uniq > mots_cles_velotypie.txt`

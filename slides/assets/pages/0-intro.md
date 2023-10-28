@@ -18,8 +18,6 @@ speaker: présentation plus orientée automatisation devops et que dans le cadre
 
 <img src="assets/img/full_install.png"  height="500" width="800" alt="Installation OK">
 
-speaker: Lancer le script sur la VM !! et montrer que la VM est vide
-
 ,,,
 
 ## Avantages / Inconvénients <!-- .element: class="advantage_inconvenience" -->

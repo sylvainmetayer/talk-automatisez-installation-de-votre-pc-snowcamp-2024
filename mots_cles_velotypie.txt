@@ -1,0 +1,24 @@
+
+ansible
+bash
+bashrc
+bootstrap
+container / conteneur
+dépôt / repo
+devops
+docker
+dotfiles
+git
+hôte / host
+kubernetes
+package / paquet / gestionnaire de paquets
+php
+pip
+playbook
+poste / machines / laptop / desktop
+prompt
+python
+script
+shell
+stow
+symlink / liens symboliques

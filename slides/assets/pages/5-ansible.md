@@ -74,6 +74,105 @@ Plusieurs machines : playbooks demo + work avec variables différentes
 
 ,,,
 
+## Structure
+
+```bash []
+├── playbooks
+│   ├── demo
+│   └── work
+├── roles
+│   ├── jetbrains_toolbox
+│   │   ├── defaults
+│   │   ├── tasks
+│   │   └── templates
+│   └── ssh_config
+│       ├── files
+│       ├── tasks
+│       └── templates
+│   └── [...]
+└── scripts
+```
+
+,,,
+
+## Playbook
+
+```yaml []
+- hosts: localhost
+  pre_tasks:
+    - name: "Simple task"
+      debug:
+        msg: "Hello, BDX I/O !"
+  roles:
+    - role: geerlingguy.docker
+      become: true
+    - role: git_config
+```
+
+speaker: task / role communauté / role custom
+
+,,,
+
+## Communauté
+
+TODO Image ? + requirement.yml
+
+,,,
+
+## Usage
+
+```bash [1-4|5-6|7-10]
+$ cat scripts/bootstrap.sh
+python3 -m pip install --user -r "requirements.txt"
+ansible-galaxy role install -r "requirements.yml"
+ansible-playbook playbooks/demo/main.yaml -K
+$ cat requirements.txt
+ansible==7.0.0
+$ cat requirements.yml
+roles:
+  - src: geerlingguy.docker
+    version: 6.1.0
+```
+
+,,,
+
+## Installation de paquets
+
+TODO
+
+,,,
+
+## Symlink
+
+TODO
+
+,,,
+
+## Templating
+
+TODO Dire que possible si besoin de boucles à partir de variables, mais ne pas présenter et renvoyer vers la documentation
+
+TODO Image template
+
+,,,
+
+## Gestion des secrets
+
+TODO Montrer fichier chiffré / ansible-vault / résultat
+
+,,,
+
+## Plusieurs postes ?
+
+```bash
+├── demo
+│   ├── main.yaml
+└── work
+    └── main.yaml
+```
+
+,,,
+
 ### Et si je veux faire...
 
 <https://docs.ansible.com/>
