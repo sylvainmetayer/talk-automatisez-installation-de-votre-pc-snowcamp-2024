@@ -17,10 +17,12 @@ dotfiles
 git
 dépôt / repo
 playbook
+ansible-playbook
 bootstrap
 script
 python
 pip
 hôte / host
 poste / machines / laptop / desktop
-
+vault
+ansible-vault

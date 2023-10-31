@@ -8,18 +8,6 @@ speaker: présentation plus orientée automatisation devops et que dans le cadre
 
 ,,,
 
-# Point de départ
-
-<img src="assets/img/desert.gif"  height="500" width="800" alt="Désert">
-
-,,,
-
-# Objectif
-
-<img src="assets/img/full_install.png"  height="500" width="800" alt="Installation OK">
-
-,,,
-
 ## Avantages / Inconvénients <!-- .element: class="advantage_inconvenience" -->
 
 | Objectif                                | État |

@@ -1,5 +1,6 @@
-
 ansible
+ansible-playbook
+ansible-vault
 bash
 bashrc
 bootstrap
@@ -22,3 +23,4 @@ script
 shell
 stow
 symlink / liens symboliques
+vault

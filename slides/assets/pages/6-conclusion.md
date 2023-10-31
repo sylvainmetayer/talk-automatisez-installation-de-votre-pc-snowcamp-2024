@@ -8,12 +8,7 @@ speaker:
 
 Préciser que mes dotfiles sont au format ansible, avec installation dépendances & co
 
-Autres alternatives :
-
-<https://www.chezmoi.io/>
-
-<https://github.com/t0pd4wn/loco.sh>
-
+Selon besoins, peut être overkill, mais m'a permis de jouer avec ansible et de mutualiser ma configuration
 ,,,
 
 # Merci !
