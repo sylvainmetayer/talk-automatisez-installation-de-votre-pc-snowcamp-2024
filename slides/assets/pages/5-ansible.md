@@ -291,3 +291,4 @@ speaker: ansible transparent sur usage vault, va utiliser password indiqué. Pos
 <https://docs.ansible.com/>
 
 <https://galaxy.ansible.com/>
+
