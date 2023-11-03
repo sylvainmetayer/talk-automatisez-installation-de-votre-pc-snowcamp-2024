@@ -26,3 +26,7 @@ hôte / host
 poste / machines / laptop / desktop
 vault
 ansible-vault
+tmux
+vim
+vimrc
+tasks

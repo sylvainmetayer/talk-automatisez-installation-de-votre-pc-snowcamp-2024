@@ -23,4 +23,8 @@ script
 shell
 stow
 symlink / liens symboliques
+tasks
+tmux
 vault
+vim
+vimrc
