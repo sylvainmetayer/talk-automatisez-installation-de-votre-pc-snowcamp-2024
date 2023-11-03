@@ -17,7 +17,7 @@ jobs:
           node-version: 16.x
       - run: npm ci
         working-directory: slides
-      - run: npm run package && touch slides/dist/.nojekyll
+      - run: npm run package
         working-directory: slides
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

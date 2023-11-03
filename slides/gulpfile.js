@@ -280,6 +280,7 @@ gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 gulp.task('package', gulp.series('default', () => {
     const files = gulp.src([
         './dist/index.html',
+        './.nojekyll',
         './revealjs_data/**'
     ])
     const assets = gulp.src([
