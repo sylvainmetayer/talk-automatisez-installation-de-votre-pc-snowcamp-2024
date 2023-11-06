@@ -21,10 +21,11 @@ speaker: présentation plus orientée automatisation devops et que dans le cadre
 
 speaker: Garder la config de mon prompt custom, gérer mes fichiers config ...
 
+Préciser que mot de passe = clé SSH / API
+
 Plan :
 
 - Dotfiles
-- Une méthode vieille comme le monde
 - Stow
 - Un script maison
 - Ansible

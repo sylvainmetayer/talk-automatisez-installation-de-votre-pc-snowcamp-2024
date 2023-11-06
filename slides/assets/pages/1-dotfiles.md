@@ -29,8 +29,6 @@ export SSH_AUTH_SOCK=/run/user/1000/ssh-agent.socket
 
 ## Comment fait-on ?
 
-<img src="assets/img/do-it.gif"  height="300" width="600" alt="Do ti">
-
 <https://dotfiles.github.io/>
 
 <https://github.com/webpro/awesome-dotfiles>

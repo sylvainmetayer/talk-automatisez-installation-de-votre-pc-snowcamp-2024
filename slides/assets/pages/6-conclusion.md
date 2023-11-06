@@ -6,9 +6,9 @@
 
 speaker:
 
-Préciser que mes dotfiles sont au format ansible, avec installation dépendances & co
+- Courbe apprentissage un peu nécessaire
+- Venez sur stand OP
 
-Selon besoins, peut être overkill, mais m'a permis de jouer avec ansible et de mutualiser ma configuration
 ,,,
 
 # Merci !

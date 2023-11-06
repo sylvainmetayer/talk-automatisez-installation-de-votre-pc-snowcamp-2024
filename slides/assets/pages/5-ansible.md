@@ -6,31 +6,11 @@ Outil d'automatisation permettant provisionnement machines
 
 Peut déployer sur parc de machine distant ou une seule machine locale
 
-Notion playbook / roles => communauté
+roles/playbooks
+
+Notion communauté +++ qui va permettre de faire assemblage de roles pour répondre au besoin ou création roles et publication
 
 Syntaxe YAML
-
-,,,
-
-## Avantages / Inconvénients <!-- .element: class="advantage_inconvenience" -->
-
-| Objectif                                | État |
-|-----------------------------------------|------|
-| Gérer mes fichiers de configuration     | ✅    |
-| Gérer les logiciels installés           | ✅    |
-| Versionnable                            | ✅    |
-| Facilement maintenable                  | ✅    |
-| Gérer mon poste de travail pro et perso | ✅    |
-| Gestion de secrets                      | ✅    |
-
-speaker:
-
-- Peu de prérequis
-- Vous utilisez déjà ansible pour votre configuration de machines ?
-- Roles / Playbooks (séparer PC pro/perso)
-- Syntaxe YAML
-
-Cependant, si pas d'usage d'ansible autre que pour un seul poste, peu être "lourd" à mettre en place
 
 ,,,
 
@@ -44,7 +24,7 @@ Cependant, si pas d'usage d'ansible autre que pour un seul poste, peu être "lou
 
 ```bash []
 ├── playbooks
-│   ├── demo
+│   ├── perso
 │   ├── work
 │   ├── ├── main.yaml
 ├── roles
@@ -62,7 +42,7 @@ Cependant, si pas d'usage d'ansible autre que pour un seul poste, peu être "lou
 
 ```yaml []
 - hosts: localhost
-  pre_tasks:
+  tasks:
     - name: "Simple task"
       debug:
         msg: "Hello, BDX I/O !"
@@ -95,7 +75,7 @@ roles:
 ## Usage
 
 ```bash []
-$ ansible-playbook playbooks/demo/main.yaml -K
+$ ansible-playbook playbooks/perso/main.yaml -K
 BECOME password:
 ```
 
@@ -138,7 +118,7 @@ packages_to_install:
 ```
 
 ```yaml []
-# playbooks/demo/main.yaml
+# playbooks/perso/main.yaml
 - hosts: localhost
   roles:
     - role: commons
@@ -195,12 +175,15 @@ speaker: réplique comportement stow
 {% if git_config_email is defined %}
   email = {{ git_config_email }}
 {% endif %}
-[...]
 ```
 
 <https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_templating.html>
 
-speaker: Dire que possible si besoin de boucles à partir de variables, mais ne pas présenter et renvoyer vers la documentation
+speaker:
+
+- variabiliser
+- ansible utilise jinja2 comme moteur de template
+- Dire que possible si besoin de boucles à partir de variables, mais ne pas présenter et renvoyer vers la documentation
 
 ,,,
 
@@ -245,7 +228,7 @@ $ ansible-vault view secret_data.txt
 Vault password:
 Bonjour BDX I/O ! :)
 Jeu concours : https://r.sylvain.dev/jeu-onepoint-bdxio
-$ ansible-playbook playbooks/demo/main.yaml --ask-vault-pass
+$ ansible-playbook playbooks/perso/main.yaml --ask-vault-pass
 ```
 
 speaker: ansible transparent sur usage vault, va utiliser password indiqué. Possible de le préciser dans un fichier pour éviter d'avoir à le retaper à chaque fois.
@@ -255,11 +238,33 @@ speaker: ansible transparent sur usage vault, va utiliser password indiqué. Pos
 ## Plusieurs postes ?
 
 ```bash
-├── demo
+├── perso
 │   ├── main.yaml
 └── work
     └── main.yaml
 ```
+
+,,,
+
+## Avantages / Inconvénients <!-- .element: class="advantage_inconvenience" -->
+
+| Objectif                                | État |
+|-----------------------------------------|------|
+| Gérer mes fichiers de configuration     | ✅    |
+| Gérer les logiciels installés           | ✅    |
+| Versionnable                            | ✅    |
+| Facilement maintenable                  | ✅    |
+| Gérer mon poste de travail pro et perso | ✅    |
+| Gestion de secrets                      | ✅    |
+
+speaker:
+
+- Peu de prérequis
+- Vous utilisez déjà ansible pour votre configuration de machines ?
+- Roles / Playbooks (séparer PC pro/perso)
+- Syntaxe YAML
+
+Cependant, si pas d'usage d'ansible autre que pour un seul poste, peu être "lourd" à mettre en place
 
 ,,,
 

@@ -67,3 +67,15 @@ Chaque PC est unique, chaque utilisateur est unique. Il existe plein de façon d
 Au cours de cette présentation, plusieurs méthodes ont tentés de répondre au besoin de pouvoir réinstaller son PC sans être trop embêté, mais au final, c'est à vous de choisir la solution qui vous convient.
 
 Exemple de mon dotfiles perso.
+
+## retours
+
+mot de passe / clé ssh à préciser
+
+=> ralentir rythme
+
+aborder galaxy avant => insiste sur aspect communauté et très certainemetn qqch ce qu'on fait
+
+idenpotent en francais
+
+courbe apprentissage a prendre en comp)te

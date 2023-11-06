@@ -18,5 +18,5 @@ Du shell, du python, du C, du PHP... Venez comme vous êtes, on va coder !
 speaker:
 - Avantage On répond enfin au besoin ! On choisit un langage qu'on aime !
 - Gestion de secret possible (dans un fichier de config par exemple)
-- Inconvénient : Il faut installer les pré-requis au langage, le maintenir, selon le langage, pas garanti que l'on puisse tout faire.
+- Inconvénient : chronophage // Il faut installer les pré-requis au langage, le maintenir, selon le langage, pas garanti que l'on puisse tout faire.
 - Facile : selon comment vous l'avez conçu... :) ?

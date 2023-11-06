@@ -1,6 +1,6 @@
 # Démo dotfiles
 
-## demo
+## perso
 
 ```shell
 git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-bdxio-2023.git && cd talk-automatisez-installation-de-votre-pc-bdxio-2023/dotfiles/ && ./scripts/bootstrap.sh
@@ -14,8 +14,8 @@ code $HOME/talk-automatisez-installation-de-votre-pc-bdxio-2023/dotfiles
 # ctrl = // zoom in # ctrl - // zoom out # color theme => light+
 
 # // structure / playbook / roles
-# playbooks/demo/main.yaml
-# playbooks/demo/locals.yaml
+# playbooks/perso/main.yaml
+# playbooks/perso/locals.yaml
 # roles/commons/tasks/main.yml
 # inventory.yml
 
@@ -39,8 +39,8 @@ ls -ail ~
 cat ~/.gitconfig # template
 cat ~/.vimrc # symlink
 
-# playbooks/demo/main.yaml
-# playbooks/demo/secret_data.txt
+# playbooks/perso/main.yaml
+# playbooks/perso/secret_data.txt
 cat ~/secret_data.txt
 ```
 
@@ -48,11 +48,11 @@ cat ~/secret_data.txt
 
 - `dnf install git python3-pip`
 - `git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-bdxio-2023`
-- `./scripts/bootstrap.sh` Will install dependencies and start demo playbook with the sudo password on the demo VM
+- `./scripts/bootstrap.sh` Will install dependencies and start perso playbook with the sudo password on the demo VM
 
 ## Usage
 
-- `ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-playbook playbooks/demo/main.yaml -K`
+- `ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-playbook playbooks/perso/main.yaml -K`
 
 - view file : `ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-vault view secret_data.txt`
 - edit file : `ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-vault edit secret_data.txt`
