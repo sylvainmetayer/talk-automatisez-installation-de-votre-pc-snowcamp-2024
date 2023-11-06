@@ -24,7 +24,7 @@ python
 pip
 hôte / host
 poste / machines / laptop / desktop
-vault
+vault / coffre-fort
 ansible-vault
 tmux
 vim
