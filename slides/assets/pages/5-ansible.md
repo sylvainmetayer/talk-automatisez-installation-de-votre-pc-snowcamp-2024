@@ -38,40 +38,6 @@ Cependant, si pas d'usage d'ansible autre que pour un seul poste, peu être "lou
 
 <img src="assets/img/tell_me_more.gif"  height="300" width="600" alt="Tell me more">
 
-speaker:
-
-- Structure
-- Usage
-- Symlink
-- Gestion des secrets
-- Plusieurs machines
-
-Structure :
-
-roles, tasks, playbook, variables
-
-Ansible galaxy fournit plein de roles déjà prêt (exemple : Guerrlinguy docker) pour setup votre pc
-
-Usage :
-
-montrer script bootstrap rapidement
-
-Installation de packages :
-
-dotfiles/roles/fedora_dependencies/tasks/main.yaml
-
-Symlink :
-
-dotfiles/roles/commons/tasks/symlink.yml + fonction gitignore à présenter
-
-Templating : Dire que possible si besoin de boucles à partir de variables, mais ne pas présenter et renvoyer vers la documentation
-
-Montrer résultat de gitconfig
-
-Gestion des secrets : secret_data.txt + bootstrap.sh
-
-Plusieurs machines : playbooks demo + work avec variables différentes
-
 ,,,
 
 ## Structure
@@ -112,11 +78,10 @@ speaker: task / role communauté / role custom
 
 ## Usage
 
-```bash [1-4|5-6|7-10]
-$ cat scripts/bootstrap.sh
+```bash [1-3|4-5|6-9]
+$ cat scripts/setup.sh
 python3 -m pip install --user -r "requirements.txt"
 ansible-galaxy role install -r "requirements.yml"
-ansible-playbook playbooks/demo/main.yaml -K
 $ cat requirements.txt
 ansible==7.0.0
 $ cat requirements.yml
@@ -124,6 +89,32 @@ roles:
   - src: geerlingguy.docker
     version: 6.1.0
 ```
+
+,,,
+
+## Usage
+
+```bash []
+$ ansible-playbook playbooks/demo/main.yaml -K
+BECOME password:
+```
+
+```text
+PLAY [localhost] ************************************
+
+TASK [git_config : Ensure Git config file exists] ************************************
+ok: [localhost]
+
+TASK [git_config : Render Git config Template] ************************************
+changed: [localhost]
+
+PLAY RECAP ************************************
+localhost                  : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+Playbook run took 0 days, 0 hours, 0 minutes, 1 seconds
+```
+
+speaker: !!!! idempotent !!!!!! OK vs changed
 
 ,,,
 

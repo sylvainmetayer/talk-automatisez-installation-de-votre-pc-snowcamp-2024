@@ -30,3 +30,4 @@ tmux
 vim
 vimrc
 tasks
+idempotent
