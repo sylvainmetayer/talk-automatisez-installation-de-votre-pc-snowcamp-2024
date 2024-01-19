@@ -3,13 +3,13 @@
 ## perso
 
 ```shell
-git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-bdxio-2023.git && cd talk-automatisez-installation-de-votre-pc-bdxio-2023/dotfiles/ && ./scripts/bootstrap.sh
+git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-snowcamp-2024.git && cd talk-automatisez-installation-de-votre-pc-snowcamp-2024/dotfiles/ && ./scripts/bootstrap.sh
 
 newgrp docker
 docker container run hello-world
 
 /opt/toolbox/jetbrains-toolbox &
-code $HOME/talk-automatisez-installation-de-votre-pc-bdxio-2023/dotfiles
+code $HOME/talk-automatisez-installation-de-votre-pc-snowcamp-2024/dotfiles
 
 # ctrl = // zoom in # ctrl - // zoom out # color theme => light+
 
@@ -47,7 +47,7 @@ cat ~/secret_data.txt
 ## Initial Setup
 
 - `dnf install git python3-pip`
-- `git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-bdxio-2023`
+- `git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-snowcamp-2024`
 - `./scripts/bootstrap.sh` Will install dependencies and start perso playbook with the sudo password on the demo VM
 
 ## Usage

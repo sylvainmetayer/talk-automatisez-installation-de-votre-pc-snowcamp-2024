@@ -1,6 +1,6 @@
-# Automatisez l'installation de votre poste de travail - BDX I/O 2023
+# Automatisez l'installation de votre poste de travail - Snowcamp 2024
 
-## [Slides](https://sylvainmetayer.github.io/talk-automatisez-installation-de-votre-pc-bdxio-2023)
+## [Slides](https://sylvainmetayer.github.io/talk-automatisez-installation-de-votre-pc-snowcamp-2024)
 
 Warning ⚠
 
