@@ -11,6 +11,10 @@ speaker:
 
 ,,,
 
+<img src="assets/img/slide_sponsors.png" alt="Standard">
+
+,,,
+
 # Merci !
 
 Openfeedback <!-- .element: class="float_left" --> <img src="assets/img/openfeedback.svg"  height="400" width="400" alt="QR code Openfeedback">
