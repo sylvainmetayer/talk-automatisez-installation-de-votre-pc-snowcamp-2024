@@ -45,7 +45,7 @@ Syntaxe YAML
   tasks:
     - name: "Simple task"
       debug:
-        msg: "Hello, BDX I/O !"
+        msg: "Hello, SnowCamp !"
   roles:
     - role: geerlingguy.docker
       become: true
@@ -203,6 +203,8 @@ speaker: ansible transparent sur usage vault, va utiliser password indiqué. Pos
 
 ## Gestion des secrets
 
+TODO refaire exemple
+
 ```bash
 $ cat secret_data.txt
 $ANSIBLE_VAULT;1.1;AES256
@@ -226,8 +228,7 @@ speaker: ansible transparent sur usage vault, va utiliser password indiqué. Pos
 $ ansible-vault create secret_data.txt
 $ ansible-vault view secret_data.txt
 Vault password:
-Bonjour BDX I/O ! :)
-Jeu concours : https://r.sylvain.dev/jeu-onepoint-bdxio
+Bonjour SnowCamp ! :)
 $ ansible-playbook playbooks/perso/main.yaml --ask-vault-pass
 ```
 
