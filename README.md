@@ -14,6 +14,6 @@ See [CanIUse](https://caniuse.com/css-has) for details
 
 [Voir README](./slides/README.md)
 
-## Vélotypie
+## Démo
 
-`cat mots_cles_vélotypie.md  | sort | uniq > mots_cles_velotypie.txt`
+[Voir README](./dotfiles/README.md)
