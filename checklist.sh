@@ -10,3 +10,6 @@ sudo systemctl stop forticlient.service
 
 #qrencode https://openfeedback.io/o7zyKdkdRulRnrtU3DZo/2024-02-02/6b97ee2f37ba238fa00f0ff7a02b6049 -o slides/assets/img/openfeedback.svg -t SVG -l H -m 2
 #qrencode https://r.sylvain.dev/snowcamp-2024 -o slides/assets/img/slides_link.svg -t SVG -l H -m 2
+
+echo "- Did you ran the followings commands in the VM ?"
+echo "timedatectl set-timezone Europe/Paris && timedatectl set-ntp false && timedatectl set-ntp true"
