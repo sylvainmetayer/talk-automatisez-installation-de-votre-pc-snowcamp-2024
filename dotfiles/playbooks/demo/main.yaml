@@ -8,15 +8,15 @@
       tags: always
 
   roles:
-    - role: geerlingguy.docker
-      become: true
+    # - role: geerlingguy.docker
+    #   become: true
     - role: fedora_dependencies
       become: true
     - role: donhector.workstation.asdf
     - role: hostname
       become: true
     - role: git_config
-    - role: jetbrains_toolbox
+    # - role: jetbrains_toolbox
     - role: gnome
     - role: commons
 

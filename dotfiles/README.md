@@ -3,7 +3,7 @@
 ## demo
 
 ```shell
-git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-snowcamp-2024.git && cd talk-automatisez-installation-de-votre-pc-snowcamp-2024/dotfiles/ && cat ./scripts/bootstrap.sh && sleep 2 && ./scripts/bootstrap.sh
+git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-snowcamp-2024.git && cd talk-automatisez-installation-de-votre-pc-snowcamp-2024/dotfiles/ && ./scripts/bootstrap.sh
 
 newgrp docker
 docker container run hello-world
