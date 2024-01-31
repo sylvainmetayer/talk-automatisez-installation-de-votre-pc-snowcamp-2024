@@ -260,24 +260,6 @@ Windows (regedit) : [win_regedit_module](https://docs.ansible.com/ansible/latest
 
 ,,,
 
-## Mais encore ?
-
-<img src="assets/img/battery_off.png" height="33" width="127" alt="Indicateur batterie off">
-
-```yaml
-- name: Display battery percentage
-  dconf:
-    key: "/org/gnome/desktop/interface/show-battery-percentage"
-    value: "true"
-    state: present
-```
-
-<img src="assets/img/battery_on.png" height="33" width="127" alt="Indicateur batterie on">
-
-Windows (regedit) : [win_regedit_module](https://docs.ansible.com/ansible/latest/collections/ansible/windows/win_regedit_module.html)
-
-,,,
-
 ## Avantages / Inconvénients <!-- .element: class="advantage_inconvenience" -->
 
 | Objectif                                | État |
