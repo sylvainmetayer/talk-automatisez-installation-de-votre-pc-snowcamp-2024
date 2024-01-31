@@ -24,7 +24,7 @@ Syntaxe YAML
 
 ```bash []
 ├── playbooks
-│   ├── perso
+│   ├── demo
 │   ├── work
 │   ├── ├── main.yaml
 ├── roles
@@ -75,7 +75,7 @@ roles:
 ## Usage
 
 ```bash []
-$ ansible-playbook playbooks/perso/main.yaml -K
+$ ansible-playbook playbooks/demo/main.yaml -K
 BECOME password:
 ```
 
@@ -118,7 +118,7 @@ packages_to_install:
 ```
 
 ```yaml []
-# playbooks/perso/main.yaml
+# playbooks/demo/main.yaml
 - hosts: localhost
   roles:
     - role: commons
@@ -224,7 +224,7 @@ $ ansible-vault create secret_data.txt
 $ ansible-vault view secret_data.txt
 Vault password:
 Bonjour SnowCamp ! :)
-$ ansible-playbook playbooks/perso/main.yaml --ask-vault-pass
+$ ansible-playbook playbooks/demo/main.yaml --ask-vault-pass
 ```
 
 speaker: ansible transparent sur usage vault, va utiliser password indiqué. Possible de le préciser dans un fichier pour éviter d'avoir à le retaper à chaque fois.
@@ -234,7 +234,7 @@ speaker: ansible transparent sur usage vault, va utiliser password indiqué. Pos
 ## Plusieurs postes ?
 
 ```bash
-├── perso
+├── demo
 │   ├── main.yaml
 └── work
     └── main.yaml

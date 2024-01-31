@@ -18,8 +18,8 @@ asdf_version: "v0.11.3"
 asdf_legacy_version_file: "no"
 
 # HOSTNAME
-hostname_name: perso
-hostname_fqdn: perso.localhost
+hostname_name: demo
+hostname_fqdn: demo.localhost
 
 # GNOMES EXTENSIONS
 gnome_extension_ids:
