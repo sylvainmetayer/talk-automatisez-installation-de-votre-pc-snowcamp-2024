@@ -13,21 +13,22 @@ sleep 2
 clear
 read -r
 
-set -xe
-
 code || echo "vscode is not installed"
+head ~/.gitconfig || true
+ls -ail ~/.vimrc || true
+
+echo "ansible-playbook playbooks/demo/main.yaml"
+sleep 10
 
 # For demo purpose, do not ever store your sudo password in plaintext !!
 ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-playbook playbooks/demo/main.yaml --extra-vars 'ansible_become_password=sylvain'
 
-which code
-
-sleep 5
+sleep 10
 
 head ~/.gitconfig
-
-sleep 5
-
 ls -ail ~/.vimrc
+
+sleep 10
+code .
 
 echo "Run 'source ~/.bashrc to get updated prompt"
