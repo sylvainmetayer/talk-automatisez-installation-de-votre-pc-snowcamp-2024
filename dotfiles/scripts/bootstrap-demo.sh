@@ -13,7 +13,21 @@ sleep 2
 clear
 read -r
 
-echo "[sylvain@fedora dotfiles]$ ansible-playbook playbooks/demo/main.yaml"
+set -xe
+
+code || echo "vscode is not installed"
 
 # For demo purpose, do not ever store your sudo password in plaintext !!
 ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt ansible-playbook playbooks/demo/main.yaml --extra-vars 'ansible_become_password=sylvain'
+
+which code
+
+sleep 5
+
+head ~/.gitconfig
+
+sleep 5
+
+ls -ail ~/.vimrc
+
+echo "Run 'source ~/.bashrc to get updated prompt"

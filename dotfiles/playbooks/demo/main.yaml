@@ -17,7 +17,7 @@
       become: true
     - role: git_config
     # - role: jetbrains_toolbox
-    - role: gnome
+    # - role: gnome
     - role: commons
 
   post_tasks:

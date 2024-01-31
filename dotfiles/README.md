@@ -1,5 +1,11 @@
 # Démo dotfiles
 
+Recorded demo
+
+```shell
+git clone https://github.com/sylvainmetayer/talk-automatisez-installation-de-votre-pc-snowcamp-2024.git && cd talk-automatisez-installation-de-votre-pc-snowcamp-2024/dotfiles/ && ./scripts/bootstrap-demo.sh
+```
+
 ## demo
 
 ```shell
