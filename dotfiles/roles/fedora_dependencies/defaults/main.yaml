@@ -1,7 +1,7 @@
 ---
-fedora_dependencies_autoremove: true
+fedora_dependencies_autoremove: false
 
-fedora_dependencies_disable_selinux: true
+fedora_dependencies_disable_selinux: false
 
 fedora_dependencies_repositories:
   - name: code
@@ -12,30 +12,16 @@ fedora_dependencies_repositories:
     gpg_check: true
 
 fedora_dependencies_packages:
-  - fwupd
-  - openssh-askpass
   - git
   - git-lfs
-  - make
   - unzip
   - htop
   - wget
   - curl
   - tmux
   - vim
-  - rsync
-  - jq
-  - gnupg2
   - NetworkManager-tui
-  - firefox
-  - gimp
-  - gpaste-ui
-  - gpaste
-  - xclip
-  - fortune-mod
   - code
-  - qrencode
-  - keepassxc
   - seahorse
   # Gnome related
   - libappindicator

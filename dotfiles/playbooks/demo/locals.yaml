@@ -5,16 +5,12 @@ asdf_plugins:
     versions: ["2.31.0"]
     global: "2.31.0"
     yum_deps: []
-  - name: "fzf"
-    versions: ["0.30.0"]
-    global: "0.30.0"
-    yum_deps: []
   - name: "starship"
     versions: ["1.10.3"]
     global: "1.10.3"
     yum_deps: []
 
-asdf_version: "v0.11.3"
+asdf_version: "v0.14.0"
 asdf_legacy_version_file: "no"
 
 # HOSTNAME
