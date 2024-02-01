@@ -262,7 +262,7 @@ Windows (regedit) : [win_regedit_module](https://docs.ansible.com/ansible/latest
 
 ## Petite démo
 
-<video width="1000" height="600" controls muted>
+<video width="1000" height="600" controls muted data-autoplay>
   <source src="assets/img/demo.mp4" type="video/mp4">
 </video>
 
